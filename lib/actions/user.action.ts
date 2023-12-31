@@ -57,7 +57,7 @@ export async function createUser(userData: CreateUserParams) {
         throw new Error('User not found')
       }
   
-      //Delete user from database 
+      // Delete user from database 
       // and questions, answers, comments etc.
   
       // const userQuestionIds = await Question.find({author : user._id}).distinct('_id')

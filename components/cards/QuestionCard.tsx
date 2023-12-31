@@ -23,7 +23,7 @@ interface QuestionTypes {
   createdAt: Date;
 }
 
-//Commented for fixing error
+// Commented for fixing error
 
 // function calculateTimeAgo(inputDate: string): string {
 //   // Convert the input date to a JavaScript Date object
