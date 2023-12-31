@@ -87,8 +87,8 @@ const Question = ({mongoUserId} : Props) => {
     setIsSubmitting(true);
 
     try {
-      //make an async call to your API -> create a question
-      //contain all form data
+      // make an async call to your API -> create a question
+      // contain all form data
 
 
       await createQuestion({
@@ -99,7 +99,7 @@ const Question = ({mongoUserId} : Props) => {
         path : pathname
       });
 
-      //navigate to home page
+      // navigate to home page
       router.push('/');
       
     } catch (error) {
@@ -149,7 +149,7 @@ const Question = ({mongoUserId} : Props) => {
                 <Editor
                   apiKey={process.env.NEXT_PUBLIC_TINY_EDITOR_API_KEY}
                   onInit={(evt, editor) => {
-                    //@ts-ignore
+                    // @ts-ignore
                     editorRef.current = editor;
                   }}
                   onBlur={field.onBlur}

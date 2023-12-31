@@ -5,7 +5,6 @@ import {
   Command,
   CommandEmpty,
   CommandGroup,
-  CommandInput,
   CommandItem,
 } from "@/components/ui/command";
 import {
@@ -16,24 +15,26 @@ import {
 import { Button } from "../ui/button";
 import { Check, ChevronsUpDown } from "lucide-react";
 import { HomePageFilters } from "@/constants/filters";
-const frameworks = [
-  {
-    value: "Recommended",
-    label: "Recommended",
-  },
-  {
-    value: "Newest",
-    label: "Newest",
-  },
-  {
-    value: "Oldest",
-    label: "Oldest",
-  },
-  {
-    value: "Trending",
-    label: "Trending",
-  },
-];
+
+// const frameworks = [
+//   {
+//     value: "Recommended",
+//     label: "Recommended",
+//   },
+//   {
+//     value: "Newest",
+//     label: "Newest",
+//   },
+//   {
+//     value: "Oldest",
+//     label: "Oldest",
+//   },
+//   {
+//     value: "Trending",
+//     label: "Trending",
+//   },
+// ];
+
 const HomePageFilter = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");

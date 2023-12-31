@@ -1,5 +1,5 @@
+
 import { formatLargeNumber, getTimeStamp } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Metric from "../main/Metric";
@@ -23,35 +23,37 @@ interface QuestionTypes {
   createdAt: Date;
 }
 
-function calculateTimeAgo(inputDate: string): string {
-  // Convert the input date to a JavaScript Date object
-  const dateObject = new Date(inputDate);
+//Commented for fixing error
 
-  // Get the current date
-  const currentDate = new Date();
+// function calculateTimeAgo(inputDate: string): string {
+//   // Convert the input date to a JavaScript Date object
+//   const dateObject = new Date(inputDate);
 
-  // Calculate the difference in milliseconds
-  const timeDifference = currentDate.getTime() - dateObject.getTime();
+//   // Get the current date
+//   const currentDate = new Date();
 
-  // Calculate the difference in days
-  const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+//   // Calculate the difference in milliseconds
+//   const timeDifference = currentDate.getTime() - dateObject.getTime();
 
-  if (daysDifference > 365) {
-    // Calculate the difference in years
-    const yearsDifference = Math.floor(daysDifference / 365);
-    return (
-      yearsDifference + (yearsDifference === 1 ? " year ago" : " years ago")
-    );
-  } else if (daysDifference > 30) {
-    // Calculate the difference in months
-    const monthsDifference = Math.floor(daysDifference / 30);
-    return (
-      monthsDifference + (monthsDifference === 1 ? " month ago" : " months ago")
-    );
-  } else {
-    return daysDifference + (daysDifference === 1 ? " day ago" : " days ago");
-  }
-}
+//   // Calculate the difference in days
+//   const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+//   if (daysDifference > 365) {
+//     // Calculate the difference in years
+//     const yearsDifference = Math.floor(daysDifference / 365);
+//     return (
+//       yearsDifference + (yearsDifference === 1 ? " year ago" : " years ago")
+//     );
+//   } else if (daysDifference > 30) {
+//     // Calculate the difference in months
+//     const monthsDifference = Math.floor(daysDifference / 30);
+//     return (
+//       monthsDifference + (monthsDifference === 1 ? " month ago" : " months ago")
+//     );
+//   } else {
+//     return daysDifference + (daysDifference === 1 ? " day ago" : " days ago");
+//   }
+// }
 
 const QuestionCard = ({
   _id,
