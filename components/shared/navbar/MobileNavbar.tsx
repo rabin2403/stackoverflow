@@ -73,7 +73,7 @@ const MobileNavbar = () => {
             height={23}
             alt="DevFlow"
           />
-          <p className="h2-bold font-spaceGrotesk text-dark100_light900">
+          <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
             Dev <span className="text-primary-500">OverFlow</span>
           </p>
         </Link>
@@ -85,14 +85,14 @@ const MobileNavbar = () => {
             <div className="flex flex-col gap-3">
               <SheetClose asChild>
                 <Link href={"/sign-in"}>
-                  <Button className="btn-secondary min-h-[41px] w-full rounded-lg py-3 px-4 shadow-none small-medium">
+                  <Button className="btn-secondary small-medium min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none">
                     <span className="primary-text-gradient">Log In</span>
                   </Button>
                 </Link>
               </SheetClose>
               <SheetClose asChild>
                 <Link href={"/sign-up"}>
-                  <Button className="border light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg text-dark400_light900 py-3 px-4 shadow-none small-medium ">
+                  <Button className="light-border-2 btn-tertiary text-dark400_light900 small-medium min-h-[41px] w-full rounded-lg border px-4 py-3 shadow-none ">
                     <span className="primary-text-gradient">Sign Up</span>
                   
                   </Button>

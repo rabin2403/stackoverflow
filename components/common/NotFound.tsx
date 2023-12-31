@@ -15,7 +15,7 @@ const NotFound = () => {
           width={400}
           height={400}
           alt="hello"
-          className="w-full max-w-[400px] mx-auto"
+          className="mx-auto w-full max-w-[400px]"
         />
       ) : (
         <Image
@@ -23,10 +23,10 @@ const NotFound = () => {
           width={400}
           height={400}
           alt="hello"
-          className="w-full max-w-[400px] mx-auto"
+          className="mx-auto w-full max-w-[400px]"
         />
       )}
-      <div className="text-center w-full text-dark100_light900 py-10 space-y-3">
+      <div className="text-dark100_light900 w-full space-y-3 py-10 text-center">
         <h2 className="h2-bold">There&apos;s no question to show</h2>
         <p className="text-sm ">
           Be the first to break the silence! 🚀 Ask a Question and kickstart the
@@ -34,7 +34,7 @@ const NotFound = () => {
           Get involved! 💡
         </p>
         <Link href={"/ask-question"} className="flex justify-center  max-sm:w-full">
-          <Button className="primary-gradient px-4 py-3 !text-light-900 min-h-[46px] ">
+          <Button className="primary-gradient min-h-[46px] px-4 py-3 !text-light-900 ">
             Ask a Question
           </Button>
         </Link>

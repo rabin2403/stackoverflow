@@ -37,23 +37,23 @@ const RightSideBar = () => {
   ];
 
   return (
-    <div className="sticky right-0 top-0 overflow-y-scroll h-[calc(100vh-50px)] px-4 background-light900_dark200 border-none -mt-2 py-10 hidden xl:block max-w-[320px] flex-wrap">
+    <div className="background-light900_dark200 sticky right-0 top-0 -mt-2 hidden h-[calc(100vh-50px)] max-w-[320px] flex-wrap overflow-y-scroll border-none px-4 py-10 xl:block">
       <div className="space-y-4">
         <h2 className="h2-bold text-dark100_light900">Top Questions</h2>
         {data.map((item, idx) => (
           <Link href={item.link} className=" block" key={idx}>
-            <div className="flex gap-5 justify-center items-center">
+            <div className="flex items-center justify-center gap-5">
               <p className="text-dark100_light900 text-sm">{item.content}</p>
               <span className="text-dark100_light900">&gt;</span>
             </div>
           </Link>
         ))}
       </div>
-      <div className="space-y-4 mt-10">
+      <div className="mt-10 space-y-4">
         <h2 className="h2-bold text-dark100_light900">Popular Tags</h2>
         {popular.map((item, idx) => (
           <Link href={item.title} className=" block" key={idx}>
-            <div className="flex gap-5 justify-between items-center">
+            <div className="flex items-center justify-between gap-5">
               <Tags title={item.title}/>
               <p className="text-dark100_light900">{item.posts}</p>
             </div>

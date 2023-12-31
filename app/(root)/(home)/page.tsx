@@ -117,18 +117,18 @@ export default async function Home() {
       <div className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row ">
         <h1 className="h1-bold text-dark100_light900 ">All Questions</h1>
         <Link href={"/ask-question"} className="flex justify-end max-sm:w-full">
-          <Button className="primary-gradient px-4 py-3 !text-light-900 min-h-[46px] ">
+          <Button className="primary-gradient min-h-[46px] px-4 py-3 !text-light-900 ">
             Ask a Question
           </Button>
         </Link>
       </div>
 
-      <div className="mt-11 flex md:flex-row flex-col justify-between gap-5 max-sm:flex-col sm:items-center">
+      <div className="mt-11 flex flex-col justify-between gap-5 max-sm:flex-col sm:items-center md:flex-row">
         <LocalSearch />
         <HomePageFilter />
       </div>
 
-      <div className="hidden flex-wrap mt-4 gap-4 md:flex lg:inline-flex">
+      <div className="mt-4 hidden flex-wrap gap-4 md:flex lg:inline-flex">
         {HomePageFilters.map((item, idx) => (
           <Link href={item.value} key={idx}>
             <Tags title={item.name} classNames="" />
@@ -136,7 +136,7 @@ export default async function Home() {
         ))}
       </div>
 
-      <div className="py-10 space-y-10">
+      <div className="space-y-10 py-10">
         {result.questions.length > 0 ? (
           result.questions.map((item : any) => (
             <QuestionCard

@@ -67,7 +67,7 @@ const QuestionCard = ({
 }: QuestionTypes) => {
   return (
     <div className="card-wrapper rounded-[10px] p-9 sm:px-11">
-      <div className="flex felx-col-reverse items-start justify-between gap-5 sm:flex-row">
+      <div className="flex-col-reverse flex items-start justify-between gap-5 sm:flex-row">
         <div>
           <span className="subtle-regular text-dark400_light700 line-clamp-1 flex sm:hidden">
             {getTimeStamp(createdAt)}

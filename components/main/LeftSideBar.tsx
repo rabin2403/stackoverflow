@@ -11,7 +11,7 @@ const LeftSideBar = () => {
   const pathname = usePathname();
   return (
       <div
-        className={`sticky left-0 top-0 overflow-y-scroll h-[calc(100vh-50px)] md:px-6 px-4 background-light900_dark200 border-none  py-10 hidden sm:block`}
+        className={`background-light900_dark200 sticky left-0 top-0 hidden h-[calc(100vh-50px)] overflow-y-scroll border-none px-4  py-10 sm:block md:px-6`}
       >
         {sidebarLinks.map((item) => {
           const isActive =
@@ -46,7 +46,7 @@ const LeftSideBar = () => {
         })}
         <div className="flex flex-col gap-3">
           <Link href={"/sign-in"}>
-            <Button className="btn-secondary min-h-[41px] w-full rounded-lg py-3 px-4 shadow-none small-medium ">
+            <Button className="btn-secondary small-medium min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none ">
               <span className="primary-text-gradient hidden md:block">
                 Log In
               </span>
@@ -55,13 +55,13 @@ const LeftSideBar = () => {
                 width={23}
                 height={23}
                 alt="DevFlow"
-                className="md:hidden block invert-colors"
+                className="invert-colors block md:hidden"
               />
             </Button>
           </Link>
           <Link href={"/sign-up"}>
-            <Button className="border light-border-2 btn-tertiary min-h-[41px] w-full rounded-lg text-dark400_light900 py-3 px-4 shadow-none small-medium ">
-              <span className="dark:text-white text-dark-100 hidden md:block">
+            <Button className="light-border-2 btn-tertiary text-dark400_light900 small-medium min-h-[41px] w-full rounded-lg border px-4 py-3 shadow-none ">
+              <span className="hidden text-dark-100 dark:text-white md:block">
                 Sign Up
               </span>
               <Image
@@ -69,7 +69,7 @@ const LeftSideBar = () => {
                 width={23}
                 height={23}
                 alt="DevFlow"
-                className="md:hidden block invert-colors"
+                className="invert-colors block md:hidden"
               />
             </Button>
           </Link>

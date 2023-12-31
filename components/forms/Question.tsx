@@ -112,7 +112,7 @@ const Question = ({mongoUserId} : Props) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col w-full gap-10"
+        className="flex w-full flex-col gap-10"
       >
         <FormField
           control={form.control}
@@ -237,7 +237,7 @@ const Question = ({mongoUserId} : Props) => {
         />
         <Button
           type="submit"
-          className="primary-gradient rounded-lg text-light-900 w-fit"
+          className="primary-gradient w-fit rounded-lg text-light-900"
           disabled={isSubmitting}
         >
           {isSubmitting ? (

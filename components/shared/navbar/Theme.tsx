@@ -40,7 +40,7 @@ const Theme = () => {
           {themes.map((item, idx) => (
             <MenubarItem
               key={item.value}
-              className="flex gap-4  dark:focus:bg-dark-400  items-center px-2.5 py-2"
+              className="flex items-center  gap-4  px-2.5 py-2 dark:focus:bg-dark-400"
               onClick={() => {
                 setMode(item.value);
 
